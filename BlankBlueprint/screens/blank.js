@@ -1,8 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import {
-  withStyles,
-} from 'react-native-ui-kitten';
+import { withStyles, Text, Button, CheckBox, Radio, Toggle, Icon, Input } from 'react-native-ui-kitten';
 
 export class _Blank extends React.Component {
   static navigationOptions = {
