@@ -7,6 +7,8 @@ export class _Blank extends React.Component {
     title: "Blank".toUpperCase()
   };
 
+  state = { }
+
   render = () => <View style={this.props.themedStyle.container}></View>;
 }
 
