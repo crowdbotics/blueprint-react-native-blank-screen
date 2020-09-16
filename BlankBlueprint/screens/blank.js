@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Image, ImageBackground } from "react-native";
+import { View, Image, ImageBackground, TouchableOpacity } from "react-native";
 import { withStyles, Text, Button, CheckBox, Radio, Toggle, Icon, Input, Datepicker } from 'react-native-ui-kitten';
 import Slider from '@react-native-community/slider';
 import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
