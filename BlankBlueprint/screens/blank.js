@@ -1,23 +1,40 @@
 import React from "react";
-import { View, Image, ImageBackground, TouchableOpacity } from "react-native";
-import { withStyles, Text, Button, CheckBox, Radio, Toggle, Icon, Input, Datepicker } from 'react-native-ui-kitten';
+import {
+  View,
+  Image,
+  ImageBackground,
+  TouchableOpacity,
+  Text,
+  Button,
+  Switch,
+  TextInput,
+  StyleSheet,
+} from "react-native";
+import DateTimePicker from 'react-native-datepicker';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import Slider from '@react-native-community/slider';
-import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
+import { CheckBox } from 'react-native-elements';
+import {SlideMenuIcon} from '../../../navigator/slideMenuIcon';
 
-export class _Blank extends React.Component {
-  static navigationOptions = ({ navigation }) => {
+export default class Blank extends React.Component {
+  static navigationOptions = ({navigation}) => {
     return {
       headerLeft: <SlideMenuIcon navigationProps={navigation} />,
     };
   };
+  
+  state = {};
 
-  state = { }
-
-  render = () => <View style={this.props.themedStyle.container}></View>;
+  render = () => (
+    <View style={styles.container}>
+      <Text>This is your new component</Text>
+    </View>
+  );
 }
 
-export default Blank = withStyles(_Blank, theme => ({
+const styles = StyleSheet.create({
   container: {
-    backgroundColor: theme["color-basic-100"]
-  }
-}));
+    flex: 1,
+    marginHorizontal: 16,
+  },
+});
