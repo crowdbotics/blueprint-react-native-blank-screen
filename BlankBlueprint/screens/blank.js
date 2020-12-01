@@ -9,6 +9,7 @@ import {
   Switch,
   TextInput,
   StyleSheet,
+  ScrollView
 } from "react-native";
 import DateTimePicker from 'react-native-datepicker';
 import Icon from 'react-native-vector-icons/FontAwesome';
